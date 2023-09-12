@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        height: 40px;
+        width: 70%;
+        background: black;
+        margin: 50px auto;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      #rect {
+        animation-name: rainbow;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes rainbow {
+        25% {
+          background-color: red;
+          top: 0px;
+          left: 0px;
+        }
+        50% {
+          background-color: yellow;
+          top: 50px;
+          left: 50px;
+        }
+        75% {
+          background-color: green;
+          top: 50px;
+          left: -50px;
+        }
+        100% {
+          background-color: black;
+          top: 0px;
+          left: 50px;
+        }
+      }
+    </style>
+    <title>Animasi Keyframes</title>
+  </head>
+  <body>
+    <div id="rect"></div>
+  </body>
+</html>
